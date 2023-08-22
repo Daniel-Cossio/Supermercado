@@ -30,9 +30,19 @@ public class Producto {
     private Integer cantidadStock;
 
 
+
+
+
+
+
     @ManyToOne
     @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
     private Categoria categoria;
+
+
+
+
+
 
 
     public String getNombre() {
@@ -91,6 +101,13 @@ public class Producto {
         this.cantidadStock = cantidadStock;
     }
 
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
 
 
 }
