@@ -17,23 +17,14 @@ public class ComprasProducto {
 
 
 
-
-
-
     @ManyToOne
-    @MapsId("idCopmpra")
+    @MapsId("idCompra")
     @JoinColumn(name = "id_compra", insertable = false, updatable = false)
     private Compra compra;
 
     @ManyToOne
     @JoinColumn(name = "id_producto", insertable = false, updatable = false)
     private Producto producto;
-
-
-
-
-
-
 
 
     public Compra getCompra() {
